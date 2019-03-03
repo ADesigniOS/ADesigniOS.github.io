@@ -1,0 +1,160 @@
+<html><head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">	
+		<title>Game-light</title>
+		<link href="/theme/CSS/mps_web_top.css?v=2019022509" rel="stylesheet" type="text/css">
+		<link rel="SHORTCUT ICON" type="image/x-icon" href="/theme/images/favicon/cockfight.ico">
+		<script type="text/javascript" src="/js/common/3rdparty/jquery-1.9.1.js"></script>
+		<script type="text/javaScript" src="/js/player/MenuHandler.js?v=2019022509"></script>
+		<script type="text/javascript" src="/js/common/JSUtil.js?v=2019022509"></script>
+		<script type="text/javascript" src="/js/common/BridgeUtils.js?v=2019022509"></script>
+		<script type="text/javaScript" src="/js/const/Const.js?v=2019022509"></script>
+		<script type="text/javascript" src="/js/player/game.js?v=2019022509"></script>
+		<script type="text/javascript">
+			PageConfig = {};
+			PageConfig.getBalanceInfoUrl = '/service/player/balanceInfo';
+			PageConfig.pfHostUrl = 'https://www.sv33888.com/api/player/MPSB/login?';
+			PageConfig.playGameUrl = '/service/player/play';
+			PageConfig.currentPage = '/page/player/game.jsp';
+			PageConfig.gameHallURL = '/page/player/gameHall.jsp';
+			PageConfig.loginURL = 'https://www.sv33888.com/api/player/MPSB/login?cert=RU9lxLqyGKEyzlHf&user=000hpmcy101440&key=s%2FDOBp2hiyP93ADkuB%2BrgqM5ktkv3%2FNPbj8kkhpvduWJpql%2Fepfm%2B3Qb%2Fw704Ckl&language=3&balance=0.0&title=0';
+			PageConfig.platform ='SV388';
+			PageConfig.gameCode = '1';
+			PageConfig.isMobile = false;
+			PageConfig.showError = false;
+			PageConfig.isOneBalanceGame = true;
+			PageConfig.customizedFor365 = false;
+			
+			window.addEventListener('storage', function (event) {
+				if (event.key == 'playing-one-balance') {
+					if(event.newValue != PageConfig.isOneBalanceGame){
+						//MenuHandler.logoutPlatform('SV388', '/page/player/gameHall.jsp');
+						window.close();
+					}
+				}
+			});
+			
+			var $j = jQuery.noConflict();
+			$j(document).ready(function() {
+				if (!PageConfig.showError) {
+					GameHandler.init();			
+				}
+				
+				if(PageConfig.customizedFor365){
+					$j("#outSideDiv").attr("class", "outside blue-bar");
+					$j("#banner").hide();
+					$j("#home").hide();
+					$j("#marquee").hide();
+				}
+				
+				MenuHandler.init();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="outSideDiv" class="outside" style="width: 1440px;">
+		
+			<div class="game_top">			
+				
+				<div class="user_info">
+					<p class="user_id">hpmcy101440</p>
+					<p class="money" id="balance">0.00</p>
+				</div>
+				<ul class="game_box">
+					
+					<li class="sexybaccarat" platform="SEXYBCRT" game_code="1" one_balance="true" onclick="GameHandler.play(this)">
+						<a class="on" href="javascript:void(0)">SexyBaccarat<span></span></a>
+					</li>
+					
+					<li class="venus" platform="VENUS" game_code="1" one_balance="true" onclick="GameHandler.play(this)">
+						<a class="on" href="javascript:void(0)">Venus<span></span></a>
+					</li>
+					
+					
+					
+					<li class="jdb" onclick="window.location='/page/player/gameHall.jsp?toSlot=true';">
+					<a href="javascript:void(0)">Slot game<span></span></a>
+					</li>
+					
+
+					
+					<li class="fish" onclick="window.location='/page/player/gameHall.jsp?toFish=true';">
+                    <a href="javascript:void(0)">Fish game<span></span></a>
+                	</li>
+					
+				</ul>
+				
+				<div class="language" id="language">
+	  				<a href="#">TI?NGVI?T</a>
+	  				<span>icon</span>
+	    			<ul id="selectLang">
+	    			
+	    				<li><a href="javascript:void(0)" lang="en">Ti?ngAnh</a></li>
+	   				
+	    				<li><a href="javascript:void(0)" lang="cn">??</a></li>
+	   				
+	    				<li><a href="javascript:void(0)" lang="vn">Ti?ngVi?t</a></li>
+	   				
+	    				<li><a href="javascript:void(0)" lang="jp">???</a></li>
+	   				
+	    				<li><a href="javascript:void(0)" lang="th">???</a></li>
+	   				
+	    				<li><a href="javascript:void(0)" lang="ma">Ti?ngMalay</a></li>
+	   				
+	    				<li><a href="javascript:void(0)" lang="kh">?????????</a></li>
+	   				
+	    				<li><a href="javascript:void(0)" lang="id">Ti?ngIndonesia</a></li>
+	   					
+	  				</ul>
+				</div>
+				<div class="home" onclick="window.location='/page/player/gameHall.jsp';">home</div>
+				<div id="menu_list" class="menu off">						
+					
+
+
+
+
+
+
+
+<script type="text/javaScript" src="/js/player/MenuHandler.js?v=2019022509"></script>
+<ul>
+	<li id="transaction_report" path="/page/player/playerDailyReport.jsp"><a href="#">TransactionReport</a></li>
+	<li id="member_setting" path="/page/player/profile.jsp"><a href="#">MemberSetting</a></li>
+	
+	
+	<li id="transfer_report" path="/page/player/transferReport.jsp"><a href="#">B?ngbáocáo</a></li>
+	
+
+	
+	<li id="logout" path="/auth/player/logout"><a href="#">Ðãngxu?t</a></li>
+</ul>
+
+				</div>
+			</div>
+				
+		
+		
+			
+			<marquee id="marquee" onclick="openMaintainHistory()">
+			<ul>
+			
+			
+			<li>Warning: The Company reserves the right to void winning tickets if the Company found the bets to have acted fraudulently or unfairly (especially if using software to place bet )........C?nh Báo:Công ty s? hu? b? t?t c? các vé cý?c th?ng có s? h? tr? c?a ph?n m?m........???????: ??????????????????????????????????????????????????? ?????????????????????????????? ???? ?????????? ? ?????????? (???????????????????)</li>
+			
+			</ul>
+			</marquee>
+			
+			
+			
+			
+		    <iframe id="parentGame" name="parentGame" scrolling="no" frameborder="0" src="https://www.sv33888.com/api/player/MPSB/login?cert=RU9lxLqyGKEyzlHf&amp;user=000hpmcy101440&amp;key=s%2FDOBp2hiyP93ADkuB%2BrgqM5ktkv3%2FNPbj8kkhpvduWJpql%2Fepfm%2B3Qb%2Fw704Ckl&amp;language=3&amp;balance=0.0&amp;title=0" style="height: 710px; width: 1440px;"></iframe>
+		    
+		</div>		
+		
+		<form action="/service/player/play" method="post" id="dispatchGamePage" style="display:none;">
+		    <input type="hidden" id="pf" name="pf" value="SV388">
+		    <input type="hidden" id="gameCode" name="gameCode" value="1">
+		 </form>		
+	
+
+</body></html>
