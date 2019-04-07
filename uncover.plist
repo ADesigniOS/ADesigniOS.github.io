@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>> https://github-production-release-asset-2e65be.s3.amazonaws.com/163366538/2964bb80-591a-11e9-8393-fd60679f26a7?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190407%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190407T024923Z&X-Amz-Expires=300&X-Amz-Signature=c71a8be2e688bf9c5508458a173c58418532816a06e7f5e65810be402ec8d679&X-Amz-SignedHeaders=host&actor_id=45682586&response-content-disposition=attachment%3B%20filename%3DUndecimus-v3.0.0-b49.ipa&response-content-type=application%2Foctet-stream</string>
+				</dict>
+				<dict>
+                    <key>kind</key>
+                    <string>display-image</string>
+                    <key>needs-shine</key>
+                    <false/>
+                    <key>url</key>
+                    <string></string>
+	            </dict>
+	            <dict>
+	                <key>kind</key>
+	                <string>full-size-image</string>
+	                <key>needs-shine</key>
+	                <false/>
+	                <key>url</key>
+	                <string>https://ipas.fun/images/electra1131_mptcp.png</string>
+	            </dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string> science.xnu.undecimus</string>
+				<key>bundle-version</key>
+				<string>420.4.20</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>subtitle</key>
+                <string>YCS</string>
+				<key>title</key>
+				<string>Unc0ver</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
